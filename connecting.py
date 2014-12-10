@@ -1,6 +1,7 @@
 #!/usr/bin/python
 from kivy.app import App
 from kivy.clock import Clock
+from kivy.config import Config
 from kivy.graphics import Color, Ellipse
 from kivy.properties import NumericProperty
 from kivy.uix.floatlayout import FloatLayout
@@ -8,6 +9,9 @@ from kivy.uix.widget import Widget
 from kivy.vector import Vector
 from math import cos
 from numpy import linspace
+
+Config.set('graphics', 'width', '280')
+Config.set('graphics', 'height', '160')
 
 
 class Animation(Widget):
