@@ -10,8 +10,8 @@ from kivy.vector import Vector
 from math import cos
 from numpy import linspace
 
-Config.set('graphics', 'width', '280')
-Config.set('graphics', 'height', '160')
+Config.set('graphics', 'width', '256')
+Config.set('graphics', 'height', '144')
 
 
 class Animation(Widget):
@@ -27,9 +27,9 @@ class Animation(Widget):
         with self.canvas:
             Color(0.0399625, 0.31640625, 0.4921875)
             for i in range(24):
-                x = 20 + 10 * i
-                y = 80 + 50 * cos(self.n * (self.ball_factors[i] / 30))
-                Ellipse(pos=(x, y), size=(5, 5))
+                x = 69 + 5 * i
+                y = 56 + 20 * cos(self.n * (self.ball_factors[i] / 30))
+                Ellipse(pos=(x, y), size=(4, 4))
 
 
 class AnimationApp(App):
