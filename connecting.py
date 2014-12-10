@@ -23,7 +23,9 @@ class Animation(Widget):
         with self.canvas:
             Color(1, 0, 0)
             for i in range(24):
-                Ellipse(pos=(20 +10 * i, 100 + 50 * cos(self.n * (self.ball_factors[i] / 30))), size=(5, 5))
+                x = 20 + 10 * i
+                y = 80 + 50 * cos(self.n * (self.ball_factors[i] / 30))
+                Ellipse(pos=(x, y), size=(5, 5))
 
 
 class AnimationApp(App):
