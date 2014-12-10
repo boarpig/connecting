@@ -31,7 +31,7 @@ class Animation(Widget):
 class AnimationApp(App):
 
     def build(self):
-        game = Animation(size_hint=(1, 1))
+        game = Animation()
         Clock.schedule_interval(game.update, 1.0/60.0)
         return game
 
