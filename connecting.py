@@ -33,7 +33,7 @@ class Animation(Widget):
         self.n += 1
         for i in range(24):
             x = 69 + 5 * i
-            y = 56 + 20 * cos(self.n * (self.ball_factors[i] / 30))
+            y = 56 + 20 * cos(self.n * (self.ball_factors[i] / 15))
             self.balls[i].pos = (x, y)
 
 
