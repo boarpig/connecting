@@ -32,7 +32,7 @@ class Animation(FloatLayout):
                 self.balls.append(Ellipse(pos=(x, y), size=(4, 4)))
             self.label = Label(text="Connecting to Prismata...",
                                color=(0.04296875, 0.37109375, 0.58203125, 1),
-                               pos=(75, 56), font_size='12pt',
+                               pos=(75, 56), font_size='11pt',
                                markup=True)
         self.bind(pos=self.update)
         self.n = 0
