@@ -2,17 +2,19 @@
 import kivy
 kivy.require('1.8.0')
 
+from kivy.config import Config
+Config.set('graphics', 'width', '256')
+Config.set('graphics', 'height', '144')
+Config.set("kivy", 'log_level', 'error')
+
 from kivy.app import App
 from kivy.clock import Clock
-from kivy.config import Config
 from kivy.graphics import Color, Ellipse
 from kivy.uix.label import Label
 from kivy.uix.floatlayout import FloatLayout
 from math import cos
 from numpy import linspace
 
-Config.set('graphics', 'width', '256')
-Config.set('graphics', 'height', '144')
 
 
 class Animation(FloatLayout):
