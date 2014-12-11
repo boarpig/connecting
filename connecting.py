@@ -21,7 +21,7 @@ class Animation(Widget):
         self.ball_factors = list(linspace(1, 4, 24))
         self.balls = []
         with self.canvas:
-            Color(0.0399625, 0.31640625, 0.4921875)
+            Color(0.04296875, 0.37109375, 0.58203125)
             for i in range(24):
                 x = 69 + 5 * i
                 y = 56
